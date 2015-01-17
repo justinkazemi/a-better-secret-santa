@@ -78,7 +78,6 @@ function sortPeople ()
 	sp.prototype.constructor = sortedPeople;
 	sp.prototype.randomList = p.generateRandomList(p.people);
 	sp.prototype.sortedList = sp.prototype.randomList.chunk(2);
-	console.log(sp);
 	sp.prototype.sortedList.forEach(function(person){
 		document.getElementById('sortedDiv').innerHTML += "<input type='text' class='form-control' readonly value='"+person.toString()+"' /><br />";
 	});	
